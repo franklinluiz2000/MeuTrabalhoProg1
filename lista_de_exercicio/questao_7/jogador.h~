@@ -1,0 +1,24 @@
+#ifdef JOGADOR_H
+#define JOGADOR_H
+
+#include<vector>
+#include"cartela.h"
+
+
+class Jogador
+{
+private:
+
+     std::string nome;
+     std::vector<int> lista_jogadores;
+     std::vector<int> cartela_jogador; 
+public:
+     Jogador();
+     std::vector<int> lista_jogadores();
+     std::vector<int> cartela_jogador(); 
+};
+
+#endif
+
+
+

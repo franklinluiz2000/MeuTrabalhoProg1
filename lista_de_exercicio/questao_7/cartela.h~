@@ -1,0 +1,21 @@
+#ifndef  CARTELA_H
+#define  CARTELA_H
+#define  MAX_NUMEROS;
+
+#include<vector>
+class Cartela
+{
+private:
+     int qtdCartelas;
+
+     std::vector<int> cartela_jogador; 
+
+public:
+     Cartela();
+
+     int getQtdCartelas();
+     
+     std::vector<int> cartela_jogador();
+
+};
+#endif

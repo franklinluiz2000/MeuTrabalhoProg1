@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string.h>
+#include "agenda.h"
+#include "pessoa.h"
+
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+    Agenda* agenda = new Agenda();
+    agenda->insereContato("Mateus", 19, 1.85);
+    agenda->insereContato("Franklin", 30, 1.81);
+    agenda->insereContato("Bruno", 25, 1.76);
+
+    cout << "all: "<<endl;
+    agenda->listaContato();
+    cout << "______" << endl;
+    //Pessoa: Mateus, idade: 19, altura: 1.85
+    agenda->imprimeContato(0);
+
+    //Pessoa: Franklin, idade: 30, altura: 1.81
+    agenda->removeContato("Mateus");
+    agenda->imprimeContato(0);
+    return 0;
+}

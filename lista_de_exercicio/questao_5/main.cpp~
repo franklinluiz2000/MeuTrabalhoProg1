@@ -1,0 +1,15 @@
+#include<iostream>
+#include"livro.h"
+
+using namespace std;
+
+int main()
+{
+     Livro livro("The C++ Programming Language", "Bjarne Stroustrup", "Addison - Wesley", 000000, 1989 );
+
+     cout << l;
+
+return 0;
+}
+
+
